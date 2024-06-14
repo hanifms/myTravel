@@ -33,7 +33,7 @@
          <section id="hero">
 
              <div class="hero-content" data-aos="fade-up">
-                 <h2>Making <span>your adventures</span><br>happen!</h2>
+                 <h2>Making <span>your ideas</span><br>happen!</h2>
                  <div>
                      <a href="{{ route('login') }}" class="btn-get-started scrollto">Login</a>
                      @if (Route::has('register'))
@@ -57,13 +57,3 @@
  </div>
  @endif
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
