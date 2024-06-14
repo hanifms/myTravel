@@ -12,8 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('tour_packages', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id('PackageID');
+            $table->string('PackageName');
+            $table->string('Description');
+            $table->number('Price');
+            $table->number('Duration');
+            $table->string('Itenarary');
+            $table->boolean('AvailablityStatus');
         });
     }
 

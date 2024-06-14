@@ -13,7 +13,12 @@ return new class extends Migration
     {
         Schema::create('inquiries', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->id('InquiryID');
+            $table->id('UserID');
+            $table->id('PackageID');
+            $table->string('InquiryMessage');
+            $table->date('InquiryDate');
+            $table->string('InquiryStatus');
         });
     }
 
