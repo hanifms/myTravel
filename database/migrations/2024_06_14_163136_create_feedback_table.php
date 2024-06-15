@@ -12,10 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('feedback', function (Blueprint $table) {
-            $table->id('FeedbackID');
-            $table->id('UserID');
+            $table->id(); // Primary key
+            $table->foreignId('UserID')->constrained('users'); // Foreign key referencing users table
             $table->string('FeedbackMessage');
             $table->date('FeedbackDate');
+            $table->timestamps(); // To track creation and update times
         });
     }
 

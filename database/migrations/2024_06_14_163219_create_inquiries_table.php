@@ -12,13 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('inquiries', function (Blueprint $table) {
-            $table->id();
-            $table->id('InquiryID');
-            $table->id('UserID');
-            $table->id('PackageID');
+            $table->id('InquiryID'); // Primary key
+            $table->foreignId('UserID'); // Foreign key
+            $table->foreignId('PackageID'); // Foreign key
             $table->string('InquiryMessage');
             $table->date('InquiryDate');
             $table->string('InquiryStatus');
+            $table->timestamps(); // Timestamps for created_at and updated_at
         });
     }
 

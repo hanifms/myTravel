@@ -12,12 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('bookings', function (Blueprint $table) {
-            $table->id('BookingID');
-            $table->id('UserID');
-            $table->id('PackageID');
+            $table->id('BookingID'); // Primary key
+            $table->foreignId('UserID'); // Foreign key
+            $table->foreignId('PackageID'); // Foreign key
             $table->date('BookingDate');
-            $table->number('NumOfPeople');
-            $table->number('TotalPrice');
+            $table->integer('NumOfPeople');
+            $table->decimal('TotalPrice', 8, 2); // Assuming a decimal type for price with precision and scale
             $table->string('BookingStatus');
             $table->timestamps();
         });
