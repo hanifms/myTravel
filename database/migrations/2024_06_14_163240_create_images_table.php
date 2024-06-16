@@ -16,7 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('packageID');
             $table->string('imageURL');
             $table->text('description');
-
+            $table->timestamps();
         });
     }
 

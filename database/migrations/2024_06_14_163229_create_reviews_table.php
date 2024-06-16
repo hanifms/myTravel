@@ -18,6 +18,7 @@ return new class extends Migration
             $table->smallInteger('rating');
             $table->string('comment');
             $table->date('reviewDate');
+            $table->timestamps();
         });
     }
 

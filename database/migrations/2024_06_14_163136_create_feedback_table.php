@@ -16,6 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('userID');
             $table->string('feedbackMessage');
             $table->date('feedbackDate');
+            $table->timestamps();
         });
     }
 

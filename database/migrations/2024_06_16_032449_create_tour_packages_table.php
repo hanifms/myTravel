@@ -19,6 +19,7 @@ return new class extends Migration
             $table->unsignedInteger('duration');
             $table->string('itenarary');
             $table->boolean('availabilityStatus');
+            $table->timestamps();
         });
     }
 
