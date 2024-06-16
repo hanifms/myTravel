@@ -12,10 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('feedback', function (Blueprint $table) {
-            $table->id('FeedbackID');
-            $table->id('UserID');
-            $table->string('FeedbackMessage');
-            $table->date('FeedbackDate');
+            $table->id('feedbackID');
+            $table->unsignedBigInteger('userID');
+            $table->string('feedbackMessage');
+            $table->date('feedbackDate');
         });
     }
 
