@@ -58,7 +58,7 @@
             <div class="container" data-aos="fade-up">
                 <div class="section-header">
                     <h2>Services</h2>
-                    <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+                    <p>Our commitment to providing exceptional experiences is reflected in the variety of services we provide. Whether you're looking to explore tour options, book your next adventure, seek assistance, or share your feedback, we have you covered.</p>
                 </div>
                 <div class="row gy-4">
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
