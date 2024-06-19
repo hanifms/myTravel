@@ -9,7 +9,7 @@
 	<body>
 	    <nav class="navtop">
 	    	<div>
-	    		<h1>Reviews System</h1>
+	    		<h1>Reviews </h1>
 	    	</div>
 	    </nav>
 		<div class="content home">
