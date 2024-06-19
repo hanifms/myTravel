@@ -4,31 +4,41 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\TourPackage;
+use App\Models\Booking;
+use Illuminate\Support\Facades\Auth;
 
 class BookingController extends Controller
 {
-    public function create($id)
+    public function create()
     {
-        $tour_package = TourPackage::findOrFail($id);
-        return view('booking.create', compact('tour_package'));
+        $tour_packages = TourPackage::all();
+        return view('booking_details', compact('tour_packages'));
     }
 
     public function store(Request $request)
     {
-        $request->validate([
-            'packageId' => 'required|exists:tour_packages,id',
-            'bookingDate' => 'required|date',
-            'numberOfPeople' => 'required|integer|min=1',
-            'totalPrice' => 'required|numeric|min:0',
+        $validatedData = $request->validate([
+            'package_id' => 'required',
+            'booking_date' => 'required|date',
+            'number_of_people' => 'required|numeric|min:1',
+            'total_price' => 'required|numeric',
         ]);
 
-        Booking::create([
-            'packageId' => $request->package_id,
-            'bookingDate' => $request->booking_date,
-            'numberOfPeople' => $request->number_of_people,
-            'totalPrice' => $request->total_price,
-        ]);
+        // Create a new Booking instance
+        $booking = new Booking();
+        $booking->packageId = $validatedData['package_id'];
+        $booking->bookingDate = $validatedData['booking_date'];
+        $booking->numOfPeople = $validatedData['number_of_people'];
+        $booking->totalPrice = $validatedData['total_price'];
+        $booking->bookingStatus = 'pending';
 
-        return redirect()->route('packages')->with('success', 'Booking created successfully');
+        $booking->userId = Auth::id();
+
+        // Save the booking
+        $booking->save();
+
+        // Optionally, you can return a response or redirect
+        return redirect()->route('booking.create')->with('success', 'Booking created successfully!');
     }
 }
+

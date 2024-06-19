@@ -3,18 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\TourPackage;
 
 class PackageController extends Controller
 {
     public function index()
     {
-        $tour_packages = TourPackage::all();
-        return view('packages', compact('tour_packages'));
+        $tourPackages = TourPackage::all();
+        return view('packages', compact('tourPackages'));
     }
 
     public function show($id)
     {
-        $tour_packages = TourPackage::findOrFail($id);
-        return view('package_details', compact('tour_package'));
+        $tourPackages = TourPackage::findOrFail($id);
+        return view('package_details', compact('tourPackages'));
     }
 }

@@ -47,5 +47,5 @@ Route::get('/packages', [PackageController::class, 'index'])->name('packages');
 Route::get('/packages/{id}', [PackageController::class, 'show'])->name('packages_details');
 
 // Route for the booking details page
-Route::get('/booking/create/{id}', [BookingController::class, 'create'])->name('booking.create');
+Route::get('/booking/create', [BookingController::class, 'create'])->name('booking.create');
 Route::post('/booking/store', [BookingController::class, 'store'])->name('booking.store');

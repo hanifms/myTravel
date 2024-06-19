@@ -1,3 +1,4 @@
+<link href="assets/css/style.css" rel="stylesheet">
 @extends('master.layout')
 @section('content')
 
@@ -11,9 +12,9 @@
       <div class="d-flex justify-content-between align-items-center">
         <h2>Package Details</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="{{route('dashboard')}}">Home</a></li>
           <li><a href="portfolio.html">Packages</a></li>
-          <li>{{$tour_packages->packageName}}</li>
+          <li>{{$tourPackages->packageName}}</li>
         </ol>
       </div>
 
@@ -51,17 +52,17 @@
           <div class="portfolio-info">
             <h3>Package information</h3>
             <ul>
-              <li><strong>Description</strong>:{{ $tour_packages->description }}</li>
-              <li><strong>Price (per pax)</strong>: {{ $tour_packages->price }}</li>
-              <li><strong>Duration</strong>: {{ $tour_packages->duration }}</li>
+              <li><strong>Description</strong>:{{ $tourPackages->description }}</li>
+              <li><strong>Price (per pax)</strong>: {{ $tourPackages->price }}</li>
+              <li><strong>Duration</strong>: {{ $tourPackages->duration }}</li>
               <li><strong>Availability</strong>: Available</li>
             </ul>
-            <a href="{{ route('booking.create', $tour_packages->id) }}">Book Now</a>
+            <a href="{{ route('booking.create', $tourPackages->id) }}">Book Now</a>
           </div>
           <div class="portfolio-description">
             <h2>Package Itinerary</h2>
             <p>
-                Itinerary: {{ $tour_packages->itinerary }}
+                Itinerary: {{ $tourPackages->itinerary }}
             </p>
           </div>
         </div>
@@ -69,8 +70,8 @@
       </div>
 
     </div>
-  </section><!-- End Portfolio Details Section -->
+  </section>
 
-</main><!-- End #main -->
+</main>
 
 @endsection

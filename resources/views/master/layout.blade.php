@@ -44,7 +44,7 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">mytour@example.com</a></i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
@@ -61,17 +61,17 @@
     <div class="container d-flex justify-content-between">
 
       <div id="logo">
-        <h1><a href="index.html">Tour<span>Me</span></a></h1>
+        <h1><a href="index.html">My<span>Tour</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="{{route('dashboard')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Our Packages</a></li>
+          <li><a class="nav-link scrollto " href="{{route('packages')}}">Our Packages</a></li>
           <li><a class="nav-link scrollto" href="#inquiries">Inquiries</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -96,7 +96,7 @@
         Licensing information: https://bootstrapmade.com/license/
         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
       -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/">MyTour</a>
       </div>
     </div>
   </footer><!-- End Footer -->
