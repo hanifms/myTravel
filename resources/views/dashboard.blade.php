@@ -64,14 +64,14 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="box">
                             <div class="icon"><i class="bi bi-briefcase"></i></div>
-                            <h4 class="title"><a href="">View Tour Packages</a></h4>
+                            <h4 class="title"><a href="{{route('packages')}}">View Tour Packages</a></h4>
                             <p class="description">Explore a wide range of carefully curated tour packages tailored to suit every kind of traveler. Whether you're seeking adventure, relaxation, or cultural immersion, our diverse selection of tours promises unforgettable experiences. Browse through our detailed itineraries, stunning photos, and customer reviews to find your perfect getaway.</p>
                         </div>
                     </div>
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="box">
                             <div class="icon"><i class="bi bi-card-checklist"></i></div>
-                            <h4 class="title"><a href="">Book Tour Packages</a></h4>
+                            <h4 class="title"><a href="{{route('booking.create')}}">Book Tour Packages</a></h4>
                             <p class="description">Ready to embark on your dream vacation? Booking your tour package with MyTravel is easy and hassle-free. Simply select your desired package, choose your travel dates, and complete the secure booking process. Our user-friendly platform ensures a seamless experience, allowing you to focus on the excitement of your upcoming adventure.</p>
                         </div>
                     </div>

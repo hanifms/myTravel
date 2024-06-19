@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Booking extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'packageId', 'bookingDate', 'numberOfPeople', 'totalPrice',
+    ];
+
+    public function tourPackage()
+    {
+        return $this->belongsTo(TourPackage::class, 'packageId');
+    }
 }
