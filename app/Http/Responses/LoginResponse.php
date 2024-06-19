@@ -1,22 +1,25 @@
 <?php
 
-namespace Laravel\Fortify\Http\Responses;
+namespace App\Http\Responses;
 
 use Laravel\Fortify\Contracts\LoginResponse as LoginResponseContract;
-use Laravel\Fortify\Fortify;
+use Illuminate\Support\Facades\Auth;
 
 class LoginResponse implements LoginResponseContract
 {
-    /**
-     * Create an HTTP response that represents the object.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
     public function toResponse($request)
     {
+        // Check which guard is authenticated and redirect accordingly
+        if (Auth::guard('admin')->check()) {
+            return redirect()->intended('admin/dashboard');
+        }
+
+        if (Auth::guard('web')->check()) {
+            return redirect()->intended('dashboard');
+        }
+
         return $request->wantsJson()
-                    ? response()->json(['two_factor' => false])
-                    : redirect()->intended('admin/dashboard');
+            ? response()->json(['two_factor' => false])
+            : redirect()->intended('/home');
     }
 }
