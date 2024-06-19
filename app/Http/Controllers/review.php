@@ -33,20 +33,20 @@ if (isset($_GET['page_id'])) {
     
     if (isset($_POST['name'], $_POST['rating'], $_POST['content'])) {
         // Insert a new review (user submitted form)
-        $stmt = $pdo->prepare('INSERT INTO reviews (page_id, name, content, rating, submit_date) VALUES (?,?,?,?,NOW())');
+        $stmt = $pdo->prepare('INSERT INTO reviews (UserID, name, review/feedback, rating, submit_date) VALUES (?,?,?,?,NOW())');
         $stmt->execute([$_GET['page_id'], $_POST['name'], $_POST['content'], $_POST['rating']]);
         exit('Your review has been submitted!');
     }
-    // Get all reviews by the Page ID ordered by the submit date
-    $stmt = $pdo->prepare('SELECT * FROM reviews WHERE page_id = ? ORDER BY submit_date DESC');
-    $stmt->execute([$_GET['page_id']]);
+    // Get all reviews by the User ID ordered by the submit date
+    $stmt = $pdo->prepare('SELECT * FROM reviews WHERE UserId = ? ORDER BY submit_date DESC');
+    $stmt->execute([$_GET['UserId']]);
     $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
     // Get the overall rating and total amount of reviews
-    $stmt = $pdo->prepare('SELECT AVG(rating) AS overall_rating, COUNT(*) AS total_reviews FROM reviews WHERE page_id = ?');
-    $stmt->execute([$_GET['page_id']]);
+    $stmt = $pdo->prepare('SELECT AVG(rating) AS overall_rating, COUNT(*) AS total_reviews FROM reviews WHERE UserId = ?');
+    $stmt->execute([$_GET['UserId']]);
     $reviews_info = $stmt->fetch(PDO::FETCH_ASSOC);
 } else {
-    exit('Please provide the page ID.');
+    exit('Please provide the User ID.');
 }
 ?>
 <div class="overall_rating">
