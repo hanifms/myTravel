@@ -33,7 +33,7 @@ if (isset($_GET['page_id'])) {
     
     if (isset($_POST['name'], $_POST['rating'], $_POST['content'])) {
         // Insert a new review (user submitted form)
-        $stmt = $pdo->prepare('INSERT INTO reviews (UserID, name, review/feedback, rating, submit_date) VALUES (?,?,?,?,NOW())');
+        $stmt = $pdo->prepare('INSERT INTO reviews (UserID, name, content, rating, submit_date) VALUES (?,?,?,?,NOW())');
         $stmt->execute([$_GET['page_id'], $_POST['name'], $_POST['content'], $_POST['rating']]);
         exit('Your review has been submitted!');
     }
