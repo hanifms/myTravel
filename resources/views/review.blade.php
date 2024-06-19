@@ -40,8 +40,8 @@ fetch("reviews.php?UserId=" + reviews_UserId).then(response => response.text()).
 	};
 });
 </script>
-<?php
 
+<?php
 function time_elapsed_string($datetime, $full = false) {
     $now = new DateTime;
     $ago = new DateTime($datetime);
@@ -105,4 +105,5 @@ if (isset($_GET['page_id'])) {
     <p class="content"><?=htmlspecialchars($review['content'], ENT_QUOTES)?></p>
 </div>
 <?php endforeach ?>
+
 
