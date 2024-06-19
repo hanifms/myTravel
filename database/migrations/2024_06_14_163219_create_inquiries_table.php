@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('inquiryMessage');
             $table->date('inquiryDate');
             $table->string('inquiryStatus');
-            $table->timestamp();
+            $table->timestamps();
         });
     }
 

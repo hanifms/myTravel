@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('description');
             $table->float('price',8,2);
             $table->unsignedInteger('duration');
-            $table->string('itenarary');
+            $table->text('itinerary');
             $table->boolean('availabilityStatus');
             $table->timestamps();
         });
