@@ -29,7 +29,7 @@ Route::middleware(['auth:admin', config('jetstream.auth_session'), 'verified'])-
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('admin-dashboard'); // Ensure this view exists
+        return view('dashboard'); // Ensure this view exists
     })->name('dashboard');
 });
 //authentication end
