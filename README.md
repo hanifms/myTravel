@@ -1,66 +1,56 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# WebAppProject 
+This is a repository for [INFO 3305 Web Application Development] group project.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<h1>INFO 3305 Web Application Development</h1>
+Section: 1 <br>
+Group: 1
 
-## About Laravel
+<h1>Group Members:</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+1. Muhammad Zubair Imran bin Md Asri (2126487)
+2. Muhammad Irfan bin Zakaria (2120199)
+3. Hanif Asyraf Bin Mohd Sabri (2217813)
+4. Adam bin Mohd Shamree (2122843)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<h1>Title: TOURISM WEBSITE APPLICATION</h1>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<h1>Introduction</h1>
+   MyTravel, a premier web application dedicated to enhancing tourism experiences with a primary focus on the diverse and captivating destinations within Malaysia. This comprehensive platform also extends its reach to include a selection of international travel spots, providing users with a global perspective. MyTravel offers detailed information on a wide array of vacation destinations, from Malaysia's serene beaches and lush rainforests to vibrant urban centres and culturally rich locales around the world. Our platform is meticulously designed to assist travellers in planning their perfect getaway, featuring curated itineraries, insightful travel tips, and authentic user reviews. By utilising MyTravel, users can seamlessly uncover the best attractions both within Malaysia and beyond, ensuring a memorable and well-informed travel experience.<br>
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<h1>Objective</h1>
+The primary objective of MyTravel is to serve as a comprehensive tourism web application that enhances the travel planning experience with a special emphasis on Malaysia while also offering information on international destinations. It aims to provide detailed insights into a wide array of locations, from popular tourist spots to hidden gems, accompanied by historical insights and practical travel tips. MyTravel also includes an efficient admin panel where administrators can respond to public inquiries and manage travel packages, including adding or removing them as needed. Additionally, by incorporating authentic user reviews and recommendations, the platform aspires to foster a well-informed and engaging community of travellers.<br>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<h1>Features and Functionalities</h1>
+<h3>Public</h3>
+<p></p>Login and Registration: Users can create a new account or log in to an existing one to access personalised features and make bookings.<br>
+View Tour Packages: Users can browse through a variety of tour packages with detailed descriptions, including destinations, itineraries, prices, and availability.<br>
+Book Tour Packages: Users can select and book their preferred tour packages, ensuring a hassle-free vacation planning experience.<br>
+Inquiries: Users can submit questions or requests for additional information about tour packages, destinations, or other travel-related concerns.<br>
+Submit Rating/Feedback/Review: After completing their tours, users can rate their experiences, provide feedback, and write reviews to help inform other travelers and improve service quality.</p><br>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<h3>Admin</h3>
+<p>Login: Administrators can securely log in to access the backend of the website and perform their management tasks.<br>
+Manage Packages: Administrators can add, update, or remove tour packages to keep the offerings current and appealing.<br>
+Manage Bookings: Administrators oversee and manage all bookings, ensuring that reservations are processed smoothly and efficiently.<br>
+Replying Inquiries: Administrators can respond to user inquiries, providing necessary information and assistance to ensure customer satisfaction.<br>
+Manage Account: Administrators can manage their own accounts and roles within the system to ensure secure and efficient operation.<br>
+Reply to Rating/Feedback/Review: Administrators can respond to user ratings, feedback, and reviews to address any concerns, show appreciation, and maintain a positive user experience.</p><br>
 
-## Laravel Sponsors
+<h1>Entity Relationship Diagram</h1>
+![Entity Relationship Diagram](https://github.com/ims5/WebAppProject/assets/102206182/e6fed0c7-b140-4122-9e7d-f8ea91fc2ab9)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+<h1>Sequence diagram</h1>
 
-### Premium Partners
+<b>User sequence diagram</b>
+![User sequence diagram](https://github.com/ims5/WebAppProject/assets/170936715/3a007217-6e34-48c5-860c-0badff96bdfb)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+<b>Admin sequence diagram</b>
+![Admin Sequence diagram](https://github.com/ims5/WebAppProject/assets/170936715/81eae816-15da-4368-9d5e-0acd707ca782)
 
-## Contributing
+<h1>Screen Capture of Website and Explanation</h1>
+<h2>Landing Page</h2>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
